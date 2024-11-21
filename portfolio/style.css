@@ -1,0 +1,578 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    /* border-bottom: 1px solid #ddd; */
+    margin: 30px 50px 0px 50px;
+}
+
+.logo-image {
+    width: 50px;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    /* color: black; */
+}
+
+.contactbutton {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 99px;
+    color: rgb(110, 7, 243);
+    border: 2px solid rgb(110, 7, 243);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.profile-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+#after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* for horizontal centering */
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(110, 7, 243);
+    color: white;
+    padding-bottom: 200px;
+}
+
+/* Services Section */
+#servicesparent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f9f9f9;
+    position: relative;
+    top: -150px;
+    width: 90vw;
+    border-radius: 8px;
+    box-shadow: #a3a3a3 5px 5px 20px;
+}
+
+.service {
+    max-width: 200px;
+    text-align: center;
+}
+
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.fa-stack {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2em;
+    position: relative;
+    width: 2.5em;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.svg-inline--fa.fa-stack-2x {
+    height: 2em;
+    width: 2.5em;
+}
+
+.has-text-success {
+    color: #5BE9B9 !important;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.svg-inline--fa.fa-stack-1x {
+    height: 1em;
+    width: 1.25em;
+}
+
+#servicesparent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.first {
+    font-size: 15px;
+}
+
+.column {
+    width: 30%;
+    text-align: center;
+}
+
+h3 {
+    padding-bottom: 15px;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-top: 8px;
+    margin: 5px 0;
+}
+
+.title {
+    font-weight: 500;
+    color: #231b9a;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.highlight {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: #231b9a;
+}
+
+
+.footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contain {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.footer-text p {
+    margin: 5px 0;
+}
+
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+    .header{
+        padding: 0%;
+    }
+}
+
+
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* Clients Section */
+.clients {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.testimonial-card blockquote {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.testimonial-card .author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.testimonial-card .title {
+    color: #777;
+    font-size: 0.9em;
+}
+
+
+/* Footer */
+.footer {
+    background-color: rgb(110, 7, 243);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    padding-top: 90px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .cta-section{
+        flex-direction: column;
+    }
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #2522cb;
+    border-radius: 25px;
+    color: #6e40c9;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 25px;
+}
+
+.github-button:hover {
+    background-color: #110ecf;
+    color: #fff;
+}
+
+.github-button svg {
+    margin-right: 8px;
+}
+
+.collab {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.collab h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.collab p {
+    font-size: 16px;
+    color: #666;
+}
+
+.conv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #6200ea;
+    border: 2px solid #6200ea;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.conv:hover {
+    background-color: #6200ea;
+    color: #fff;
+}
+
+
+.cta-section {
+    background-color: #1a2238;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 25px;
+    bottom: -60px;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+
+/* .cta-section::after {
+    content: '';
+    display: block;
+    height: 20px;
+    background-color: #6c63ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+
+.cta-section h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.cta-section p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00ffcc;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    height: 45px;
+}
+
+.cta-button:hover {
+    background-color: #00ffcc;
+    color: #1a2238;
+}
+
+.cta-button .icon {
+    margin-right: 10px;
+}
+.text{
+    text-align: center;
+    align-content: center;
+}
+
+
+/* carousel... */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel-slide img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
