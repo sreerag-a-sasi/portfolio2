@@ -421,7 +421,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-#hidden-button{
+.hidden-button{
     width: 100px;
     height: 30px;
     border-radius: 20px;
